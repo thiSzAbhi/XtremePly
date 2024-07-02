@@ -1,39 +1,54 @@
 body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
-:root {
-    --bg-color-light: #f8f9fa;
-    --text-color-light: #000;
-    --bg-color-dark: #121212;
-    --text-color-dark: #fff;
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
 }
 
-.light-theme {
-    --bg-color: var(--bg-color-light);
-    --text-color: var(--text-color-light);
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em;
 }
 
-.dark-theme {
-    --bg-color: var(--bg-color-dark);
-    --text-color: var(--text-color-dark);
+.video-container {
+    width: 80%;
+    max-width: 800px;
+    margin-bottom: 2em;
 }
 
-.container {
-    max-width: 700px;
-    margin: auto;
-}
-
-.video-frame {
+.video-container iframe {
     width: 100%;
-    height: 0;
-    padding-bottom: 56.25%;
-    position: relative;
+    height: 450px;
 }
 
-.video-frame iframe {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+.video-list {
+    width: 80%;
+    max-width: 800px;
+}
+
+.video-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.video-list li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1em;
+    margin-bottom: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.video-list li:hover {
+    background-color: #f0f0f0;
 }
