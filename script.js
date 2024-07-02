@@ -31,3 +31,17 @@ function extractId(link) {
     const url = new URL(link);
     return url.pathname.split('/').pop();
 }
+
+function toggleTheme() {
+    const body = document.body;
+    if (body.classList.contains('light-theme')) {
+        body.classList.remove('light-theme');
+        body.classList.add('dark-theme');
+    } else {
+        body.classList.remove('dark-theme');
+        body.classList.add('light-theme');
+    }
+}
+
+// Set initial theme
+document.body.classList.add('light-theme');
