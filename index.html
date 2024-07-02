@@ -14,9 +14,12 @@
             <input type="text" id="videoLink" class="form-control" placeholder="Paste video link here" aria-label="Video link" aria-describedby="playButton">
             <button class="btn btn-primary" type="button" id="playButton" onclick="playVideo()">Play</button>
         </div>
-        <div class="ratio ratio-16x9" id="videoPlayer"></div>
+        <div id="videoPlayer" class="video-frame"></div>
         <div class="text-center mt-3">
             <button class="btn btn-secondary" onclick="downloadVideo()">Download</button>
+        </div>
+        <div class="text-center mt-3">
+            <button class="btn btn-dark" onclick="toggleTheme()">Toggle Theme</button>
         </div>
     </div>
     <script src="scripts.js"></script>
