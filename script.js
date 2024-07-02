@@ -4,7 +4,7 @@ function playVideo() {
 
     let embedLink;
     if (link.includes('mdisk.me')) {
-        embedLink = `https://mdisk.me/embed-${extractId(link)}`;
+        embedLink = `https://www.mdisk.me/embed-${extractId(link)}`;
     } else if (link.includes('terabox.com')) {
         embedLink = `https://www.terabox.com/embed/${extractId(link)}`;
     } else if (link.includes('pdisk.me')) {
